@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BOOK KLUB</title>
+	<link rel="icon" href="BOOK LOGO.jpg">
+	<style>
+		
+		/* Start Global Rules */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+
+/* Start Landing Page */
+.landing-page header {
+  min-height: 80px;
+  display: flex;
+}
+@media (max-width: 767px) {
+  .landing-page header {
+    min-height: auto;
+    display: initial;
+  }
+}
+.landing-page header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .landing-page header .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.landing-page header .logo {
+  color: #5d5d5d;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+@media (max-width: 767px) {
+  .landing-page header .logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+.landing-page header .links {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .landing-page header .links {
+    text-align: center;
+    gap: 10px;
+  }
+}
+.landing-page header .links li {
+  margin-left: 30px;
+  color: #5d5d5d;
+  cursor: pointer;
+  transition: .3s;
+}
+@media (max-width: 767px) {
+  .landing-page header .links li {
+    margin-left: auto;
+  }
+}
+.landing-page header .links li:last-child {
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: #FFF;
+  background-color: #6c63ff;
+}
+.landing-page header .links li:not(:last-child):hover {
+  color: #6c63ff;
+}
+.landing-page .content .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 140px;
+  min-height: calc(100vh - 80px);
+}
+@media (max-width: 767px) {
+  .landing-page .content .container {
+    gap: 0;
+    min-height: calc(100vh - 101px);
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 767px) {
+  .landing-page .content .info {
+    text-align: center;
+    margin-bottom: 15px 
+  }
+}
+.landing-page .content .info h1 {
+  color: black;
+  font-size: 44px;
+}
+.landing-page .content .info p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 15px;
+  color: black;
+}
+.landing-page .content .info button {
+  border: 0;
+  border-radius: 20px;
+  padding: 12px 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  color: black;
+  background-color: black;
+}
+.landing-page .content .image img {
+  max-width: 100%;
+}
+.button{
+    background-color: grey;
+}	
+
+.jpg{
+  height: 100px;
+	
+}
+.button:hover{
+    transform: scale(1.1);
+    background-color: #fff;
+     transition: all .3s ease-in-out;
+}
+</style>
+
+</head>
+<body>
+	<div class="landing-page">
+        <header>
+          <div class="container">
+          <img src="BOOK LOGO.jpg" class="jpg"> 
+          <a href="#" class="logo"><b>PORTFOLIO</b></a>
+            <ul class="links">
+              <li></li>
+              <a><li class="button">About Me</li></a>
+              <a href="REAL SIGN UP.html"><li class="button">projects</li></a>
+              <a href="contactpage.html"><li class="button">linkedin</li></a>
+            <a href="i.html">  <li class="button">Education</li></a>
+            </ul>
+          </div>
+        </header>
+        <div class="content">
+          <div class="container">
+            <div class="info">
+              <h1>My name is KIRENGA MURINDWA ARNOLD<br>and i am a passionate frontend and backend developer who is also good at creating mockups and designs</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus odit nihil ullam nesciunt quidem iste, Repellendus odit nihil ertyuiop[ jhgfdsadghjk oiuytrewfghjkl;lkjhgfds 98765etyuihgfffghjklkjytrfghb</p>
+              
+            </div>
+            <div class="image">
+              <img src="BOOK LOGO.jpg" alt="book club" usemap="#workplace">
+              
+            
+            </div>
+          </div>
+        </div>
+      </div>
+
+</body>
+</html>
