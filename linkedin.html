@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background-color: #e0e0e0;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            position: absolute;
+            bottom: -60px;
+            left: 20px;
+        }
+
+        .header h1 {
+            margin-top: 10px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .header p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .section {
+            padding: 20px;
+            margin-top: 60px;
+        }
+
+        .section h2 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 5px;
+        }
+
+        .section p, .section li {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .experience-item, .skill-item {
+            margin-bottom: 20px;
+        }
+
+        .experience-item h3 {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .experience-item p {
+            font-size: 14px;
+            color: #999;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-item {
+            background-color: #e0e0e0;
+            padding: 8px 15px;
+            border-radius: 15px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #666;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .contact-btn:hover {
+            background-color: #555;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+            }
+
+            .profile-pic {
+                width: 100px;
+                height: 100px;
+                bottom: -50px;
+            }
+
+            .header h1 {
+                font-size: 20px;
+            }
+
+            .section {
+                margin-top: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="1.jfif" alt="Profile Picture" class="profile-pic">
+            <h1>KIRENGA ARNOLD</h1>
+            <p>Software Engineer | Passionate about building innovative solutions</p>
+            <a href="#" class="contact-btn" onclick="showContact()">Contact Me</a>
+        </div>
+        <div class="section about">
+            <h2>About</h2>
+            <p>I'm a dedicated software engineer with 5 years of experience in developing scalable web applications. Skilled in JavaScript, Python, and cloud technologies, I thrive in collaborative environments and love tackling complex challenges.</p>
+        </div>
+        <div class="section experience">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>Senior Software Engineer - Tech Corp</h3>
+                <p>Jan 2025 - Present</p>
+                <p>Led a team of 5 developers to build a cloud-based platform, improving system efficiency by 30%.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Software Engineer - Innovate Solutions</h3>
+                <p>Jun 2019 - Dec 2021</p>
+                <p>Developed and maintained web applications using React and Node.js, serving over 10,000 users.</p>
+            </div>
+        </div>
+        <div class="section skills">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <span class="skill-item">JavaScript</span>
+                <span class="skill-item">Python</span>
+                <span class="skill-item">React</span>
+                <span class="skill-item">Node.js</span>
+                <span class="skill-item">AWS</span>
+                <span class="skill-item">Docker</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showContact() {
+            alert("Contact me at: kirengaarnold08@gmail.com");
+        }
+    </script>
+</body>
+</html>

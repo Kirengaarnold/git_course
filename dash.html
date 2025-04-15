@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Dashboard</title>
+    <link rel="stylesheet" href="dash.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Blog Dashboard</h2>
+                <span class="toggle-btn" onclick="toggleSidebar()">☰</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Dashboard</a></li>
+                    <li><a href="#">Posts</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Users</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header>
+                <h1>Welcome, Admin</h1>
+                <div class="user-profile">
+                    <img src="https://via.placeholder.com/40" alt="User Avatar">
+                    <span>John Doe</span>
+                </div>
+            </header>
+
+            <!-- Blog Posts Section -->
+            <section class="posts">
+                <h2>Recent Posts</h2>
+                <div class="post-grid" id="postGrid">
+                    <!-- Posts will be dynamically added by JavaScript -->
+                </div>
+                <button class="add-post-btn" onclick="addNewPost()">Add New Post</button>
+            </section>
+        </main>
+    </div>
+    <script src="dash.js"></script>
+</body>
+</html>
